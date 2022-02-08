@@ -1,0 +1,72 @@
+body{
+    font: normal 16px/1.5 "Noto Sans","Nanum Gothis", sans-serif;
+    color: white;
+    background: white;
+
+}
+header{
+    background: url("../images/img-bg-header.png") center/cover;
+    min-height: 1070px;
+}
+
+a, a:link{
+    text-decoration: none;
+    color: white;
+}
+/*******************header*********************/
+.header-main{
+    width: 100%;
+    padding: 20px 0;
+}
+.header_main_wrap{
+    width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+hr.divider{
+    border: 0;
+    height: 1px;
+    background: white;
+}
+#gnb{
+    display: flex;
+    column-gap: 40px;
+}
+
+#burger{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+#burger .bar{
+    display: block;
+    height: 4px;
+    background: white;
+    margin: 8px 0;
+}
+#burger .bar.w70{
+    margin: 0 0 0 30% !important;
+}
+
+/********header solgun***********/
+.slogun-text{
+    font-family: Sanchez;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 82px;
+    position: absolute;
+    width: 1060px;
+    height: 164px;
+    left: 474px;
+    top: 453px;
+    text-align: center;
+}
+.slogun-text :nth-child(1){
+font-size: 64px;
+}
+.slogun-text :nth-child(2){
+font-size: 34px;
+}
