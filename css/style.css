@@ -14,11 +14,13 @@ a, a:link {
 }
 
 /*========================header===============*/
-#header-main {
+.header-main {
     width: 100%;
-    padding: 15px 0;
-    
+    padding: 10px 0;
+    /* display: flex;
+    justify-content: space-between; */
 }
+
 .header-main-wrapper {
     max-width: 1366px; /*1200->1366*/
     margin: 0 auto;
@@ -26,20 +28,27 @@ a, a:link {
     justify-content: space-between;
     align-items : flex-end;
 }
-
-hr.divider {
-    border: 0;
-    height: 1px;
-    background: white;
+.header-main-logo {
+    padding: 30px 0 0 0;
+}
+.header-main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: flex-end;
 }
 #gnb {
     display: flex;
-    column-gap: 1px;
-    font-size: 24px; /*font-size: 24px; */
+    font-size: 1.2rem;
+}
+#gnb li {
+    margin: 0 30px;
 }
 #burger {
     width: 40px;
-    height: 46px;
+    height: 30px;
     /* align-self: center; */
 }
 #burger .bar {
@@ -47,9 +56,51 @@ hr.divider {
     height: 3px;
     background: white;
     margin: 8px 0;
-
+    
 }
 #burger .bar.w70 {
     width: 70%;
     margin: 0 0 0 30%;
+}
+hr.divider {
+    border: 0;
+    height: 1px;
+    background: white;
+}
+/*=========================header > slogan section ================*/
+.header-slogan {
+    width: 77.59882869692533%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+.slogan-text {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Sanchez', serif ;
+}
+.slogan-text > p:nth-last-child(1){
+    font-size: 2.25rem;
+    font-family: 'Nanum';
+}
+/*======================section=============================*/
+.title {
+    margin: 0 auto;
+    width: 1366px;
+}
+.title hr {
+    border: 0;
+    width: 1226px;
+    height: 1px;
+    background: #BFBFBF;
+    margin: 10px auto;
+}
+.title p {
+    text-align: center;
+    font-family: 'Sanchez', serif ;
+    font-size: 3rem;
+    color: #000000;
 }
