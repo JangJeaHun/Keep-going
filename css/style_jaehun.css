@@ -112,8 +112,18 @@ font-size: 34px;
     padding: 30px;
     height: 327px;
 }
-.notice_wrap{
-    
+.notice_wrap :nth-child(){
+    text-align: left;
+    font-size: 80px;
+}
+.notice_wrap :nth-child(){
+    text-align: center;
+    font-size: 80px;
+
+}
+.notice_wrap :nth-child(){
+    text-align: right;
+    font-size: 80px;
 }
 .notice ul h2{
     font-size: 30px;
