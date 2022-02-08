@@ -1,0 +1,55 @@
+body {
+    font: normal 16px/1.5 "Noto Sans KR", "Nanum Gothic", sans-serif;
+    color: #333;
+    background:#f1f1f1;
+}
+header {
+    background: url("../images/img-bg-header.png") center/cover;
+    min-height: 1070px;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/*========================header===============*/
+#header-main {
+    width: 100%;
+    padding: 15px 0;
+    
+}
+.header-main-wrapper {
+    max-width: 1366px; /*1200->1366*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items : flex-end;
+}
+
+hr.divider {
+    border: 0;
+    height: 1px;
+    background: white;
+}
+#gnb {
+    display: flex;
+    column-gap: 1px;
+    font-size: 24px; /*font-size: 24px; */
+}
+#burger {
+    width: 40px;
+    height: 46px;
+    /* align-self: center; */
+}
+#burger .bar {
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 8px 0;
+
+}
+#burger .bar.w70 {
+    width: 70%;
+    margin: 0 0 0 30%;
+}
