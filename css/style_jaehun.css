@@ -1,6 +1,6 @@
 body{
     font: normal 16px/1.5 "Noto Sans","Nanum Gothis", sans-serif;
-    color: white;
+    color: black;
     background: white;
 
 }
@@ -56,21 +56,71 @@ hr.divider{
 }
 
 /********header solgun***********/
+
 .slogun-text{
     font-family: Sanchez;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 82px;
-    position: absolute;
     width: 1060px;
-    height: 164px;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
 }
 .slogun-text :nth-child(1){
 font-size: 64px;
 }
 .slogun-text :nth-child(2){
 font-size: 34px;
+}
+/**************************main section************/
+.section_hr{
+    margin: 20px auto;
+    width: 1366px;
+    border: 0;
+    height: 1px;
+    background: black; 
+}
+
+.p_text{
+    text-align: center;
+    font-size: 48px;
+}
+
+.section_notice{
+    background: url(/images/img_main_notice.png);
+    height: 938px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.notice_wrap{
+    position: absolute;
+    background-color: aqua;
+    width: 683px;
+    margin-left: 277px;
+    height: 938px;
+}
+.notice{
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    background-color: rgb(122, 122, 122);
+    margin: 30px;
+    padding: 30px;
+    height: 327px;
+}
+.notice_wrap{
+    
+}
+.notice ul h2{
+    font-size: 30px;
+    margin: 10px;
+}
+.notice li{
+    margin-left: 30px;
+    list-style: circle;
+    font-size: 18px;
 }
