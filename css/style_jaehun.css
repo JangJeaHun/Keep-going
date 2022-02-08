@@ -25,7 +25,10 @@ a, a:link{
     justify-content: space-between;
 
 }
-
+nav{
+    align-self: flex-end;
+    font-size: 24px;
+}
 
 hr.divider{
     border: 0;
@@ -40,7 +43,7 @@ hr.divider{
 #burger{
     width: 40px;
     height: 40px;
-    align-self: center;
+    align-self: flex-end;
 }
 #burger .bar{
     display: block;
@@ -60,8 +63,9 @@ hr.divider{
     position: absolute;
     width: 1060px;
     height: 164px;
-    left: 474px;
-    top: 453px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 .slogun-text :nth-child(1){
