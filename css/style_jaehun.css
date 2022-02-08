@@ -81,11 +81,13 @@ font-size: 34px;
     border: 0;
     height: 1px;
     background: black; 
+    margin-top: 80px;
 }
 
 .p_text{
     text-align: center;
     font-size: 48px;
+    margin: 30px auto;
 }
 
 .section_notice{
@@ -98,7 +100,7 @@ font-size: 34px;
 }
 .notice_wrap{
     position: absolute;
-    background-color: aqua;
+    background-color: #6EBAD5;
     width: 683px;
     margin-left: 277px;
     height: 938px;
@@ -107,30 +109,40 @@ font-size: 34px;
     position: absolute;
     bottom: 10%;
     width: 80%;
-    background-color: rgb(122, 122, 122);
+    background-color: #525151;
     margin: 30px;
     padding: 30px;
     height: 327px;
 }
-.notice_wrap :nth-child(){
+.notice_text{
+    font-size: 80px;
+    font-family: NanumGothic;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin: 70px auto;
+}
+.notice_text div{
+    padding: 20px;
+}
+.notice_text1{
     text-align: left;
-    font-size: 80px;
 }
-.notice_wrap :nth-child(){
+.notice_text2{
     text-align: center;
-    font-size: 80px;
-
 }
-.notice_wrap :nth-child(){
+.notice_text3{
     text-align: right;
-    font-size: 80px;
 }
 .notice ul h2{
     font-size: 30px;
     margin: 10px;
+    color: white;
 }
 .notice li{
     margin-left: 30px;
     list-style: circle;
     font-size: 18px;
+    margin-bottom: 20px;
 }
