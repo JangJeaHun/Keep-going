@@ -6,7 +6,7 @@ body{
 }
 header{
     background: url("../images/img-bg-header.png") center/cover;
-    min-height: 1070px;
+    height: 100vh;
 }
 
 a, a:link{
@@ -29,10 +29,13 @@ a, a:link{
 .header_main_wrap img {
     margin: 30px 0 0 0;
 }
-
+.header_main_menu {
+    display: flex;
+}
 nav{
     align-self: flex-end;
     font-size: 1.2rem; /*24px*/
+    margin: 0 15px 0 0;
 }
 
 hr.divider{
@@ -44,7 +47,7 @@ hr.divider{
     display: flex;
 }
 #gnb li {
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 #burger{
