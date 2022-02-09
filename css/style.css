@@ -1,11 +1,15 @@
 body{
-    font: normal 16px/1.5 "Noto Sans","Nanum Gothis", sans-serif;
+    font: normal 16px/1.5 "Noto Sans KR","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
     background: white;
-
+}
+.wrap{
+        width: 1366px;
+        margin: 0 auto;
+        background-color: rgb(54, 54, 54)
 }
 header{
-    background: url("../images/img-bg-header.png") center/cover;
+    background: url("../images/img_bg_header.png") center/cover;
     height: 100vh;
 }
 
@@ -13,8 +17,11 @@ a, a:link{
     text-decoration: none;
     color: white;
 }
+h3{
+    font: 24px;
+}
 /*******************header*********************/
-.header-main{
+.header_main{
     width: 100%;
     padding: 20px 0;
 }
@@ -23,7 +30,6 @@ a, a:link{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .header_main_wrap img {
@@ -67,6 +73,7 @@ hr.divider{
 
 /********header solgan***********/
 
+
 .slogan-text{
     font-family: "Sanchez";
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -78,13 +85,15 @@ hr.divider{
     text-align: center;
     color: white;
 }
-.slogan-text :nth-child(1){
+.slogan_text :nth-child(1){
 font-size: 4rem;
 }
-.slogan-text :nth-child(2){
+.slogan_text :nth-child(2){
 font-size: 2.25rem;
 }
-/**************************main section************/
+/**************************main section*********************************/
+/********main notice*****/
+
 .section_hr{
     margin: 20px auto;
     width: 1366px;
@@ -98,26 +107,30 @@ font-size: 2.25rem;
     text-align: center;
     font-size: 3rem;
     margin: 30px auto;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
 }
 
 .section_notice{
+    display: flex;
+    justify-content: center;
     background: url("/images/img_main_notice.png");
     height: 938px;
-    width: 100%;
+    width: 100% ;
+    background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    
     
 }
 .notice_wrap{
-    position: absolute;
+    
     background-color: #6EBAD5;
     width: 683px;
-    margin-left: 277px;
     height: 938px;
+    margin-left: 0;
+    
 }
 .notice{
-    position: absolute;
+    
     bottom: 10%;
     width: 80%;
     background-color: #3B2121;
@@ -156,6 +169,7 @@ font-size: 2.25rem;
     list-style: circle;
     font-size: 18px;
     margin-bottom: 20px;
+
 }
 
 /*===============introduce#CEO===================*/
@@ -193,3 +207,67 @@ p.title_text span{
     float: right;
 }
 
+=======
+}      
+/******** main-room******/
+.section_room p{
+    font-size: 30px;
+    width: 738px;
+}
+.room_menu ul{
+    display: flex;
+}
+.room_menu ul li{
+    padding: 20px;
+    font-size: 36px;
+}
+.room_bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.room_bottom img{
+    width: 860px;
+    height: 773px;
+}
+.room_bottom_right{
+    text-align: center;
+    align-self: center;
+}
+.room_bottom_right h3{
+    font-size: 24px;
+}
+.room_bottom_right p{
+    font: normal "Noto Sans";
+    font-size: 20px;
+}
+/*********************footer********************/
+footer{
+    height: 455px;
+    width: 100%;
+    background: #2A286E;
+}
+#footer_top{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+#footer_top li{
+    margin: 0 20px;
+    color: white;
+    font-size: 24px;
+}
+#footer_middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.sns_wrap{
+    display: flex;
+}
+.sns_wrap div{
+    padding: 10px;
+}
+#footer_bottom p{
+    font-size: 20px;
+    color: white;
+}
