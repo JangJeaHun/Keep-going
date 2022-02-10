@@ -22,11 +22,15 @@ a, a:link{
 h3{
     font: 24px;
 }
+.section {
+    height: ;
+}
 
 /*******************header*********************/
 .header_main{
     width: 100%;
     padding: 20px 0;
+    height: 100vh;
 }
 .header_main_wrap{
     width: 1366px;
@@ -133,12 +137,11 @@ font-size: 2.25rem;
 /********main notice*****/
 
 .section_hr{
-    margin: 20px auto;
+
     width: 1366px;
     border: 0;
     height: 1px;
     background: rgb(82, 82, 82); 
-    margin-top: 80px;
 }
 
 .p_text{
@@ -211,8 +214,9 @@ font-size: 2.25rem;
 
 /******** main-room view******/
 .section_room p{
-    font-size: 30px;
+    font-size: 16px;
     width: 738px;
+    margin: 10px 0;
 }
 .room_menu ul{
     display: flex;
@@ -227,18 +231,15 @@ font-size: 2.25rem;
 }
 .room_bottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
 }
 .room_bottom_left{
     width: 770px;
-    height: 770px;
     background-color: #2A286E;
 }
-.room_bottom img{
-    top: 10%;
-    width: 770px;
-    height: 770px;
+.room_bottom_left img{
+    height: 600px
 }
 .room_bottom_right{
     width: 100%;
@@ -250,11 +251,13 @@ font-size: 2.25rem;
 }
 .room_bottom_right p{
     font: normal "Noto Sans";
-    font-size: 20px;
+    font-size: 16px;
+    margin: 0 auto;
 }
 /******** main-travel ******/
 .travel{
     display: flex;
+    height: 100vh;
 }
 .travel_left{
     display: flex;

@@ -13,63 +13,67 @@
     <meta property="og:image" content="http://mywebfull.dothome.co.kr/images">
 
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <!--글꼴-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
 
 
     <title>나로비치호텔</title>
 </head>
 
 <body>
-    <header>
-        <div class="header_main">
-            <div class="header_main_wrap">
-                <div class="header_main_logo">
-                    <a href="index.html">
-                        <img src="images/img_logo.png" alt="나로비치호텔">
-                    </a>
-                </div>
-                <div class="header_main_menu">
-                    <nav>
-                        <ul id="gnb">
-                            <li><a href="introduce/index.html">호텔소개</a></li>
-                            <li><a href="#">시설안내</a></li>
-                            <li><a href="#">예약안내</a></li>
-                            <li><a href="#">주변관광지</a></li>
-                            <li><a href="#">고객센터</a></li>
-                        </ul>
-                    </nav>
-                    <div id="burger">
-                        <span class="bar w70"></span>
-                        <span class="bar"></span>
-                        <span class="bar w70"></span>
+    <section id="fullpage">
+        <header class="section">
+            <div class="header_main">
+                <div class="header_main_wrap">
+                    <div class="header_main_logo">
+                        <a href="index.html">
+                            <img src="images/img_logo.png" alt="나로비치호텔">
+                        </a>
+                    </div>
+                    <div class="header_main_menu">
+                        <nav>
+                            <ul id="gnb">
+                                <li><a href="introduce/index.html">호텔소개</a></li>
+                                <li><a href="#">시설안내</a></li>
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">주변관광지</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </nav>
+                        <div id="burger">
+                            <span class="bar w70"></span>
+                            <span class="bar"></span>
+                            <span class="bar w70"></span>
+                        </div>
                     </div>
                 </div>
+                <hr class="divider">
             </div>
-        </div>
-        <hr class="divider">
-
-        <div class="header_slogan">
-            <div class="slogan_text">
-                <p>Select a beach image to download.</p>
-                <p>아름다움과 아늑함이 공존하는 곳.</p>
+            <div class="header_slogan">
+                <div class="slogan_text">
+                    <p>Select a beach image to download.</p>
+                    <p>아름다움과 아늑함이 공존하는 곳.</p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
 
-    <section>
-        <article>
+    
+        
+
+        <article class="section">
             <div class="wrap_vh">
                 <hr class="section_hr">
                 <p class="p_text">NOTICE</p>
@@ -96,17 +100,17 @@
         </article>
 
 
-        <article>
+        <article class="section">
             <hr class="section_hr">
             <p class="p_text">ROOM VIEW</p>
             <div class="wrap">
                 <div class="section_room">
                     <div>
-                        <p>침실과 휴식 공간이 분리된 형태의 객실로,<br>
-                            일과 생활에 지친 분들의 피로를 남김없이 씻어드립니다.<br>
-                            또한 고품격의 세련미와 모던함이 돋보이는 인테리어와<br>
-                            아늑하고 쾌적한 환경으로<br>
-                            만족스러운 휴식과 추억을 드립니다.</p>
+                        <p>침실과 휴식 공간이 분리된 형태의 객실로</p>
+                        <p>일과 생활에 지친 분들의 피로를 남김없이 씻어드립니다</p>
+                        <p>또한 고품격의 세련미와 모던함이 돋보이는 인테리어와</p>
+                        <p>아늑하고 쾌적한 환경으로</p>
+                        <p>만족스러운 휴식과 추억을 드립니다</p>
                     </div>
                     <div class="room_menu">
                         <ul>
@@ -141,7 +145,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="section">
             <hr class="section_hr">
             <p class="p_text">TRAVEL</p>
 
@@ -174,33 +178,8 @@
                 </div>
             </div>
         </article>
-
-
-
-
-
-
-    </section>
-
-
-    <aside>
-
-    </aside>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
+    
+    <footer class="section">
         <div class="wrap">
             <div>
                 <ul id="footer_top">
@@ -227,6 +206,8 @@
         </div>
 
     </footer>
+</section>
+    
 </body>
 
 </html>
