@@ -1,15 +1,15 @@
 body{
     font: normal 16px/1.5 "Noto Sans KR","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
-    background: white;
+    
 }
 .wrap{
         width: 1366px;
         margin: 0 auto;
-        background-color: rgb(54, 54, 54)
+        /*background-color: rgb(54, 54, 54)*/
 }
 header{
-    background: url("../images/img_bg_header.png") center/cover;
+    background: url("../images/img_header_bg.png") center/cover;
     height: 100vh;
 }
 
@@ -171,6 +171,7 @@ font-size: 2.25rem;
     margin-bottom: 20px;
 
 }
+
 /*===============subpage header==================*/
 #sub_header {
     height:463px;
@@ -180,6 +181,62 @@ font-size: 2.25rem;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
+
+/******** main-room view******/
+.section_room p{
+    font-size: 30px;
+    width: 738px;
+}
+.room_menu ul{
+    display: flex;
+}
+.room_menu ul li{
+    padding: 20px;
+    font-size: 36px;
+}
+.room_bottom{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.room_bottom_left{
+    width: 770px;
+    height: 770px;
+    background-color: #2A286E;
+}
+.room_bottom img{
+    top: 10%;
+    width: 770px;
+    height: 770px;
+}
+.room_bottom_right{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+.room_bottom_right h3{
+    font-size: 24px;
+}
+.room_bottom_right p{
+    font: normal "Noto Sans";
+    font-size: 20px;
+}
+/******** main-travel ******/
+.travel{
+    display: flex;
+}
+.travel_left{
+    background: url("/images/img_main_travel.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 900px;
+}
+.travel_right{
+    width: 100%;
+    background-color: gold;
+}
+
+/**************************END main section*********************************/
 
 }
 #sub_header .slogan_text :nth-child(1){
@@ -207,7 +264,7 @@ font-size: 2.25rem;
     visibility: hidden;
 }
 /*===============introduce#CEO===================*/
-section {
+.section_wrap {
     width: 1366px;
     margin: 0 auto;
 }
@@ -268,37 +325,7 @@ p.title_text span{
 .ceo_icons p:nth-child(2) img{
     margin-right: 10px;
 }
-/******** main-room******/
-.section_room p{
-    font-size: 30px;
-    width: 738px;
-}
-.room_menu ul{
-    display: flex;
-}
-.room_menu ul li{
-    padding: 20px;
-    font-size: 36px;
-}
-.room_bottom{
-    display: flex;
-    justify-content: space-around;
-}
-.room_bottom img{
-    width: 860px;
-    height: 773px;
-}
-.room_bottom_right{
-    text-align: center;
-    align-self: center;
-}
-.room_bottom_right h3{
-    font-size: 24px;
-}
-.room_bottom_right p{
-    font: normal "Noto Sans";
-    font-size: 20px;
-}
+
 /*********************footer********************/
 footer{
     height: 455px;
