@@ -172,7 +172,7 @@ font-size: 2.25rem;
 
 }
 
-/*===============subpage header==================*/
+/***********subpage header********/
 #sub_header {
     height:463px;
 }
@@ -242,7 +242,7 @@ font-size: 2.25rem;
 #sub_header .slogan_text :nth-child(1){
     font-size: 2rem;
     }
-/*===============subpage header_bottom===========*/
+/*******subpage header_bottom**********/
 .header_bottom {
     height: 50px;
     border-bottom:2px solid #C4C4C4;
@@ -263,7 +263,8 @@ font-size: 2.25rem;
 .header_bottom ul{
     visibility: hidden;
 }
-/*===============introduce#CEO===================*/
+
+/**********introduce#CEO***********/
 .section_wrap {
     width: 1366px;
     margin: 0 auto;
