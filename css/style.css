@@ -216,10 +216,14 @@ font-size: 2.25rem;
 }
 .room_menu ul{
     display: flex;
+    
 }
 .room_menu ul li{
     padding: 20px;
     font-size: 36px;
+}
+.room_menu ul li a{
+    color: black;
 }
 .room_bottom{
     display: flex;
@@ -249,14 +253,16 @@ font-size: 2.25rem;
     font-size: 20px;
 }
 /******** main-travel ******/
+.section_travel{
+
+}
 .travel{
     display: flex;
 }
 .travel_left{
     display: flex;
     align-items: flex-end;
-    background: url("/images/img_main_travel.png");
-    background-repeat: no-repeat;
+    background: url("/images/img_main_travel.png") no-repeat 100% 0 / cover;
     width: 100vw;
     height: 900px;
     font: "NanumGothic";
@@ -281,8 +287,24 @@ font-size: 2.25rem;
     margin: 20px 0;
 }
 .travel_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     background-color: gold;
+}
+.travel_right div{
+    margin-right: 20%;
+    
+}
+.travel_right p{
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+}
+.travel_right_logo{
+    text-align: right;
+    padding-bottom: 10%;
 }
 
 /**************************END main section*********************************/
