@@ -22,9 +22,6 @@ a, a:link{
 h3{
     font: 24px;
 }
-.section {
-    height: ;
-}
 
 /*******************header*********************/
 .header_main{
@@ -94,14 +91,11 @@ hr.divider{
 }
 .slogan_text :nth-child(1){
 font-size: 4rem;
+margin: 10px;
 }
 .slogan_text :nth-child(2){
 font-size: 2.25rem;
 }
-/********subpage**********************/
-#sub_header .slogan_text :nth-child(1){
-    font-size: 2rem;
-    }
 /***********subpage header********/
 #sub_header {
     height:463px;
@@ -112,27 +106,9 @@ font-size: 2.25rem;
     top: 30%;
     transform: translate(-50%, -50%);
 }
-/*******subpage header_bottom**********/
-.header_bottom {
-    height: 50px;
-    border-bottom:2px solid #C4C4C4;
-}
-.header_bottom_wrap {
-    display: flex;
-    width: 1366px;
-    height: inherit;
-    margin: 0 auto;
-}
-.header_bottom_wrap img{
-    margin-left: 96px;
-}
-.header_bottom_wrap p {
-    text-align: center;
-    font-size: 1.5rem;
-}
-.header_bottom ul{
-    visibility: hidden;
-}
+#sub_header .slogan_text :nth-child(1){
+    font-size: 2rem;
+    }
 /**************************main section*********************************/
 /********main notice*****/
 
@@ -314,8 +290,16 @@ font-size: 2.25rem;
 #sub_header {
     position: relative;
     height: 463px;
-    background: url('../images/sub_bg.png') no-repeat center;
-
+    background: linear-gradient(#2A286E, 10%, rgba(63, 40, 100, 0));
+}
+#sub_header::before {
+    content:"";
+    display: block;
+    width: 100vw;
+    height: 463px;
+    background: url("../images/sub_bg.png") no-repeat;
+    position: absolute;
+    z-index: -1;
 }
 #sub_header .slogan_text{
     position: absolute;
