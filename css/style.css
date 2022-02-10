@@ -264,7 +264,7 @@ font-size: 2.25rem;
     align-items: flex-end;
     background: url("../images/img_main_travel.png") no-repeat 100% 0 / cover;
     width: 100vw;
-    height: 900px;
+    height: 80%;
     font: "NanumGothic";
 }
 .travel_left_wrap{
@@ -291,6 +291,7 @@ font-size: 2.25rem;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    height: 80%;
     background-color: #6EBAD5;
 }
 .travel_right div{
