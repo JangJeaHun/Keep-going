@@ -22,11 +22,15 @@ a, a:link{
 h3{
     font: 24px;
 }
+.section {
+    height: ;
+}
 
 /*******************header*********************/
 .header_main{
     width: 100%;
     padding: 20px 0;
+    height: 100vh;
 }
 .header_main_wrap{
     width: 1366px;
@@ -133,12 +137,11 @@ font-size: 2.25rem;
 /********main notice*****/
 
 .section_hr{
-    margin: 20px auto;
+
     width: 1366px;
     border: 0;
     height: 1px;
     background: rgb(82, 82, 82); 
-    margin-top: 80px;
 }
 
 .p_text{
@@ -151,7 +154,7 @@ font-size: 2.25rem;
 .section_notice{
     display: block;
     justify-content: center;
-    background: url("/images/img_main_notice.png");
+    background: url("../images/img_main_notice.png");
     width: 100% ;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,8 +214,9 @@ font-size: 2.25rem;
 
 /******** main-room view******/
 .section_room p{
-    font-size: 30px;
+    font-size: 16px;
     width: 738px;
+    margin: 10px 0;
 }
 .room_menu ul{
     display: flex;
@@ -227,18 +231,15 @@ font-size: 2.25rem;
 }
 .room_bottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
 }
 .room_bottom_left{
     width: 770px;
-    height: 770px;
     background-color: #2A286E;
 }
-.room_bottom img{
-    top: 10%;
-    width: 770px;
-    height: 770px;
+.room_bottom_left img{
+    height: 600px
 }
 .room_bottom_right{
     width: 100%;
@@ -250,18 +251,20 @@ font-size: 2.25rem;
 }
 .room_bottom_right p{
     font: normal "Noto Sans";
-    font-size: 20px;
+    font-size: 16px;
+    margin: 0 auto;
 }
 /******** main-travel ******/
 .travel{
     display: flex;
+    height: 100vh;
 }
 .travel_left{
     display: flex;
     align-items: flex-end;
-    background: url("/images/img_main_travel.png") no-repeat 100% 0 / cover;
+    background: url("../images/img_main_travel.png") no-repeat 100% 0 / cover;
     width: 100vw;
-    height: 900px;
+    height: 80%;
     font: "NanumGothic";
 }
 .travel_left_wrap{
@@ -288,7 +291,8 @@ font-size: 2.25rem;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    background-color: gold;
+    height: 80%;
+    background-color: #6EBAD5;
 }
 .travel_right div{
     margin-right: 20%;
@@ -296,8 +300,9 @@ font-size: 2.25rem;
 }
 .travel_right p{
     text-align: right;
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
+    color: white;
 }
 .travel_right_logo{
     text-align: right;
