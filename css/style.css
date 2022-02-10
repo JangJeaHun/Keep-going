@@ -171,6 +171,17 @@ font-size: 2.25rem;
     margin-bottom: 20px;
 
 }
+
+/***********subpage header********/
+#sub_header {
+    height:463px;
+}
+#sub_header .slogan_text{
+    /* display: none; */
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
 /******** main-room view******/
 .section_room p{
     font-size: 30px;
@@ -227,7 +238,33 @@ font-size: 2.25rem;
 
 /**************************END main section*********************************/
 
-/*===============introduce#CEO===================*/
+
+#sub_header .slogan_text :nth-child(1){
+    font-size: 2rem;
+    }
+/*******subpage header_bottom**********/
+.header_bottom {
+    height: 50px;
+    border-bottom:2px solid #C4C4C4;
+}
+.header_bottom_wrap {
+    display: flex;
+    width: 1366px;
+    height: inherit;
+    margin: 0 auto;
+}
+.header_bottom_wrap img{
+    margin-left: 96px;
+}
+.header_bottom_wrap p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.header_bottom ul{
+    visibility: hidden;
+}
+
+/**********introduce#CEO***********/
 .section_wrap {
     width: 1366px;
     margin: 0 auto;
