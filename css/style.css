@@ -9,7 +9,7 @@ body{
         /*background-color: rgb(54, 54, 54)*/
 }
 header{
-    background: url("../images/img_bg_header.png") center/cover;
+    background: url("../images/img_header_bg.png") center/cover;
     height: 100vh;
 }
 
