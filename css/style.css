@@ -305,11 +305,26 @@ font-size: 2.25rem;
 }
 
 /**************************END main section*********************************/
+/***********subpage header********/
+#sub_header {
+    position: relative;
+    height: 463px;
+    background: url('../images/sub_bg.png') no-repeat center;
+
+}
+#sub_header .slogan_text{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
 
 
+#sub_header .slogan_text :nth-child(1){
+    font-size: 2rem;
+    }
+/**********introduce #CEO***********/
 
-
-/**********introduce#CEO***********/
 .section_wrap {
     width: 1366px;
     margin: 0 auto;
@@ -330,30 +345,30 @@ p.title_text span{
     height: 1px;
     background: rgb(82, 82, 82); 
 }
-.content {
+.ceo_content {
     width:1366px;
     overflow:hidden;
     margin: 35px;
     background: url('../images/greetings.png') no-repeat;
     background-position: bottom 50px right 50px;
 }
-.content_left{
+.ceo_content_left{
     width: 35%;
     float: left;
 }
-.content_right{
+.ceo_content_right{
     width: 65%;
     float: right;
 }
-.content_right .name {
+.ceo_content_right .name {
     font-size: 2rem;
     color:#2A286E;
     font-weight: bold;
 }
-.content_right .hotel_name {
+.ceo_content_right .hotel_name {
     font-size: 1.2em;
 }
-.content_right .hello {
+.ceo_content_right .hello {
     width: 90.10023651312085%; /*800px로 바꿈*/
     margin: 10px 10px 80px 0;
     font-size: 1.4rem; /*1.625rem ->1.4rem*/
@@ -372,6 +387,37 @@ p.title_text span{
     margin-right: 10px;
 }
 
+/*********************introduce #history********/
+.history_content {
+    display: flex;
+}
+.history_content_left {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 150px;
+    position: relative;
+}
+.history_content_left::before {
+    content: "";
+    display: block;
+    width: 440px;
+    height: 440px;
+    background: linear-gradient(135deg, #2A286E, rgba(63, 40, 100, 0));
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    z-index: -1;
+}
+.history_content_right p {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Noto Sans";
+    color: #2A286E ;
+}
+.history_content_right li {
+
+}
 /*********************footer********************/
 footer{
     height: 455px;
