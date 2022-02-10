@@ -1,12 +1,14 @@
 body{
     font: normal 16px/1.5 "Noto Sans KR","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
-    
 }
 .wrap{
         width: 1366px;
         margin: 0 auto;
         /*background-color: rgb(54, 54, 54)*/
+}
+.wrap_vh{
+    height: 100vh;
 }
 header{
     background: url("../images/img_header_bg.png") center/cover;
@@ -20,6 +22,7 @@ a, a:link{
 h3{
     font: 24px;
 }
+
 /*******************header*********************/
 .header_main{
     width: 100%;
@@ -91,6 +94,41 @@ font-size: 4rem;
 .slogan_text :nth-child(2){
 font-size: 2.25rem;
 }
+/********subpage**********************/
+#sub_header .slogan_text :nth-child(1){
+    font-size: 2rem;
+    }
+/***********subpage header********/
+#sub_header {
+    height:463px;
+}
+#sub_header .slogan_text{
+    /* display: none; */
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+/*******subpage header_bottom**********/
+.header_bottom {
+    height: 50px;
+    border-bottom:2px solid #C4C4C4;
+}
+.header_bottom_wrap {
+    display: flex;
+    width: 1366px;
+    height: inherit;
+    margin: 0 auto;
+}
+.header_bottom_wrap img{
+    margin-left: 96px;
+}
+.header_bottom_wrap p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.header_bottom ul{
+    visibility: hidden;
+}
 /**************************main section*********************************/
 /********main notice*****/
 
@@ -111,10 +149,9 @@ font-size: 2.25rem;
 }
 
 .section_notice{
-    display: flex;
+    display: block;
     justify-content: center;
     background: url("/images/img_main_notice.png");
-    height: 938px;
     width: 100% ;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,8 +162,7 @@ font-size: 2.25rem;
     
     background-color: #6EBAD5;
     width: 683px;
-    height: 938px;
-    margin-left: 0;
+    height: 100%;
     
 }
 .notice{
@@ -172,16 +208,7 @@ font-size: 2.25rem;
 
 }
 
-/***********subpage header********/
-#sub_header {
-    height:463px;
-}
-#sub_header .slogan_text{
-    /* display: none; */
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-}
+
 /******** main-room view******/
 .section_room p{
     font-size: 30px;
@@ -226,10 +253,32 @@ font-size: 2.25rem;
     display: flex;
 }
 .travel_left{
+    display: flex;
+    align-items: flex-end;
     background: url("/images/img_main_travel.png");
     background-repeat: no-repeat;
     width: 100vw;
     height: 900px;
+    font: "NanumGothic";
+}
+.travel_left_wrap{
+    width: 683px;
+    margin-left: 20%; 
+    margin-bottom: 10%; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.travel_left_wrap p{
+    
+    font-size: 40px;
+}
+.travel_left_wrap span{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.travel_left_text{
+    margin: 20px 0;
 }
 .travel_right{
     width: 100%;
@@ -239,30 +288,7 @@ font-size: 2.25rem;
 /**************************END main section*********************************/
 
 
-#sub_header .slogan_text :nth-child(1){
-    font-size: 2rem;
-    }
-/*******subpage header_bottom**********/
-.header_bottom {
-    height: 50px;
-    border-bottom:2px solid #C4C4C4;
-}
-.header_bottom_wrap {
-    display: flex;
-    width: 1366px;
-    height: inherit;
-    margin: 0 auto;
-}
-.header_bottom_wrap img{
-    margin-left: 96px;
-}
-.header_bottom_wrap p {
-    text-align: center;
-    font-size: 1.5rem;
-}
-.header_bottom ul{
-    visibility: hidden;
-}
+
 
 /**********introduce#CEO***********/
 .section_wrap {
