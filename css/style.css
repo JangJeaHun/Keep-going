@@ -328,6 +328,9 @@ font-size: 2.25rem;
 #sub_header .slogan_text :nth-child(1){
     font-size: 2rem;
     }
+#sub_header .slogan_text :nth-child(2){
+    font-size: 1.5rem;
+    }
 /**********introduce #CEO***********/
 
 .section_wrap {
@@ -393,8 +396,12 @@ p.title_text span{
 }
 
 /*********************introduce #history********/
+.title_text.sub_title_text{
+    margin-top: 180px;
+}
 .history_content {
-    display: flex;
+    background: url("../images/history.png") no-repeat;
+    background-position:top 500px right 50px;
 }
 .history_content_left {
     width: 40%;
@@ -402,7 +409,10 @@ p.title_text span{
     padding: 150px;
     position: relative;
 }
-.history_content_left::before {
+.history_content_circle {
+    display: flex;
+}
+.history_content_circle .history_content_left::before{
     content: "";
     display: block;
     width: 440px;
@@ -414,12 +424,43 @@ p.title_text span{
     top: 50px;
     z-index: -1;
 }
+.history_content_square {
+    display: flex;
+}
+.history_content_square .history_content_left::before{
+    content: "";
+    display: block;
+    width: 365px;
+    height: 450px;
+    background: linear-gradient(135deg, #2A286E, rgba(63, 40, 100, 0));
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: -1;
+}
+.history_content div:nth-child(2){
+    flex-direction: row-reverse;
+}
+.history_content div:nth-child(5){
+    flex-direction: row-reverse;
+}
+
 .history_content_right p {
     font-size: 3rem;
     font-weight: bold;
     font-family: "Noto Sans";
     color: #2A286E ;
+    margin-top: 80px;
 }
+.history_content_right li {
+    margin-top: 10px;
+    font-family: "Noto Sans";
+    font-size: 2rem;
+}
+.history_content_right li span {
+    margin-right: 50px;
+}
+
 /*********************footer********************/
 footer{
     height: 455px;
