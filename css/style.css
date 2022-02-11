@@ -523,7 +523,47 @@ p.title_text span{
 }
 .symbol{
     width: 65%;
-    height: 500px;
+    height: 400px;
+}
+/*********************way to come***************/
+.way_content {
+    display: flex;
+}
+
+.way_content >div {
+    width: 50%;
+}
+.way_content h2{
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 3rem;
+    color: #2A286E;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+}
+.way_content>div >div {
+    display: flex;
+    margin : 30px 0;
+}
+.way_content_right >div>div {
+    margin: 10px 0 0 50px;
+}
+
+
+.way_content>div >div> img {
+    width: 76px;
+    height: 76px;
+}
+
+.way_content_text {
+    font-family: "Noto Sans";
+    font-size: 1.625rem;
+    display: flex;
+    flex-direction: column;
+}
+.way_content_text >img:nth-of-type(1){
+    width: 27px;
+    height: 23px;
 }
 /*********************footer********************/
 footer{
