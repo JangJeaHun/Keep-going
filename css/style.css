@@ -1,6 +1,7 @@
 body{
     font: normal 16px/1.5 "Noto Sans KR","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
+    background: #f1f1f1;
 }
 .wrap{
         width: 1366px;
@@ -297,7 +298,7 @@ font-size: 2.25rem;
     display: block;
     width: 100vw;
     height: 463px;
-    background: url("../images/sub_bg.png") no-repeat;
+    background: url("../images/sub_bg.png") no-repeat center/cover;
     position: absolute;
     z-index: -1;
 }
@@ -341,8 +342,7 @@ p.title_text span{
     width:1366px;
     overflow:hidden;
     margin: 35px;
-    background: url('../images/greetings.png') no-repeat;
-    background-position: bottom 50px right 50px;
+    background: url('../images/greetings.png') no-repeat 100% 95% ;
 }
 .ceo_content_left{
     width: 35%;
@@ -444,7 +444,77 @@ p.title_text span{
 .history_content_right li span {
     margin-right: 50px;
 }
+/*********************introduce #CIBI******************/
+.cibi_content {
+    width:1366px;
+    overflow:hidden;
+    margin: 35px;
+    background: url('../images/Identity.png') no-repeat 100% 100% ;
+}
+.cibi_content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.cibi_content > div{
+    margin: 50px;
+}
+.cibi_content > div:nth-child(1){
+    display: flex;
+}
+.cibi_content h3 {
+    display: inline-block;
+    padding: 0 50px 0 0;
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom:1px solid rgb(82, 82, 82);
+}
+.cibi_content p {
+    font-size: 2rem;
+    margin: 20px 0 0 0;
+    font-family: "Noto Sans"
+}
+.cibi_content .main_color {
+    margin: 20px 0 0 50px;
+}
+.cibi_content .main_color p{
+    font-size: 1.8rem;
+    margin: 10px 0 0 40px;
+}
+.cibi_content .main_color p:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 32px;
+    background: #2A286E;
+    z-index: 2;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+.cibi_content .main_color p:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 32px;
+    background: #1A93BE;
+    z-index: 2;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
 
+}
+.cibi_content .main_color p:nth-of-type(1) span {
+    color: #2A286E;
+}
+.cibi_content .main_color p:nth-of-type(2) span {
+    color: #1A93BE;
+}
+
+.wordmark{
+    width: 65%;
+}
+.symbol{
+    width: 65%;
+    height: 500px;
+}
 /*********************footer********************/
 footer{
     height: 455px;
