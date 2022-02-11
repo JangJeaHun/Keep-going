@@ -11,11 +11,21 @@ body{
 .wrap_vh{
     height: 100vh;
 }
-header{
-    background: url("../images/img_header_bg.png") center/cover;
-    height: 100vh;
-}
 
+header{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(#2A286E,25%, rgba(63, 40, 100, 0));
+}
+header::before {
+    content:"";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/img_header_bg.png") no-repeat center/cover;
+    position: absolute;
+    z-index: -1;
+}
 a, a:link{
     text-decoration: none;
     color: white;
