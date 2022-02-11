@@ -67,13 +67,50 @@
                 <hr class="divider">
             </div>
             
-            <div class="header_slogan">
-                    <div class="slider-item">
-                        <div class="slogan_text">
+            <div class="slidershow-container">
+                <div class="mySlides fade">
+                    <div id="header_slogan" class="slider_1">
+                        <div id="slogan_text">
                             <p>Select a beach image to download.</p>
-                            <p>아름다움과 아늑함이 공존하는 곳.</p>
+                            <p>아름다움과 아늑함이 공존하는 곳</p>
                         </div>
-                    </div>
+                    </div>  
+                </div>
+
+                <div class="mySlides fade">
+                    <div id="header_slogan" class="slider_2">
+                        <div id="slogan_text">
+                            <p>Select a beach image to download.</p>
+                            <p>세상에서 가장 영원한 행복은 평범하며, 인생에서 가장 긴 소유는 소중합니다. </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="mySlides fade">
+                    <div id="header_slogan" class="slider_3">
+                        <div id="slogan_text">
+                            <p>Select a beach image to download.</p>
+                            <p>광활한 바다에 높은 하늘</p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="mySlides fade">
+                    <div id="header_slogan" class="slider_4">
+                        <div id="slogan_text">
+                            <p>Select a beach image to download.</p>
+                            <p>겸손을 배우려 하지 않는 자는 아무것도 배우지 못한다</p>
+                        </div>
+                    </div>  
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </header>
 
@@ -216,6 +253,37 @@
     </footer>
 </section>
     <script src="index.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+    </script>
 </body>
 
 </html>
