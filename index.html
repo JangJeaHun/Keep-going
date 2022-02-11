@@ -21,8 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap" rel="stylesheet">    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="js/main.js"></script>
     
@@ -45,11 +45,35 @@
                     <div class="header_main_menu">
                         <nav>
                             <ul id="gnb">
-                                <li><a href="introduce/index.html">호텔소개</a></li>
-                                <li><a href="#">시설안내</a></li>
-                                <li><a href="#">예약안내</a></li>
-                                <li><a href="#">주변관광지</a></li>
-                                <li><a href="#">고객센터</a></li>
+                                <li><a href="introduce/index.html">호텔소개</a>
+                                    <ul>
+                                        <li><a href="#">CEO 인사말</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">CI/BI 소개</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">숙박안내</a>
+                                    <ul>
+                                        <li><a href="#">숙박시설</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">예약안내</a>
+                                    <ul>
+                                        <li><a href="#">예약안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">주변관광지</a>
+                                    <ul>
+                                        <li><a href="#">주변관광지</a></li>  
+                                    </ul>
+                                </li>
+                                <li><a href="#">고객센터</a>
+                                    <ul>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">이용후기</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                         <div id="burger">
@@ -61,11 +85,14 @@
                 </div>
                 <hr class="divider">
             </div>
+            
             <div class="header_slogan">
-                <div class="slogan_text">
-                    <p>Select a beach image to download.</p>
-                    <p>아름다움과 아늑함이 공존하는 곳.</p>
-                </div>
+                    <div class="slider-item">
+                        <div class="slogan_text">
+                            <p>Select a beach image to download.</p>
+                            <p>아름다움과 아늑함이 공존하는 곳.</p>
+                        </div>
+                    </div>
             </div>
         </header>
 
@@ -179,7 +206,7 @@
             </div>
         </article>
     
-    <footer class="section">
+    <footer class="section fp-auto-height">
         <div class="wrap">
             <div>
                 <ul id="footer_top">
@@ -207,7 +234,7 @@
 
     </footer>
 </section>
-    
+    <script src="index.js"></script>
 </body>
 
 </html>

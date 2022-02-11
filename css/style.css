@@ -26,7 +26,6 @@ h3{
 /*******************header*********************/
 .header_main{
     width: 100%;
-    padding: 20px 0;
     height: 100vh;
 }
 .header_main_wrap{
@@ -54,10 +53,44 @@ hr.divider{
     background: white;
 }
 #gnb{
+
+    width: 700px;
     display: flex;
+    
+    justify-content: flex-end;
 }
 #gnb li {
-    margin-left: 60px;
+    float: left;
+    position: relative;
+    margin: 0 5px;
+    width: 100%;
+}
+#gnb li:hover ul{
+    display: block;
+}
+
+#gnb li a{
+    display: block;
+    height: 30px;
+}
+#gnb li ul li{
+    height: 50px;
+}
+#gnb li:hover > a{
+    color: white;
+    margin: 0;
+}
+#gnb ul{
+    position: absolute;
+    left: 0;
+    background: #2A286E;
+    display: none;
+}
+#gnb ul li:hover a{
+    font-weight: 800;
+    font-size: 1.125rem;
+
+    
 }
 
 #burger{
