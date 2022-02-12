@@ -526,7 +526,64 @@ p.title_text span{
     height: 400px;
 }
 /*********************way to come***************/
+#map {
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+}
 .way_content {
+    display: flex;
+}
+.way_content_left {
+    width: 50%;
+}
+.way_content_right {
+    width: 50%;
+}
+#left_title {
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 3rem;
+    color: #2A286E;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+}
+#left_subject>div {
+    display: flex;
+    margin: 0 0 50px 0;
+}
+
+#right_title {
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 3rem;
+    color: #2A286E;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+}
+#right_subject>div {
+    display: flex;
+    margin: 0 0 50px 0;
+
+}
+#right_subject >div>img {
+    width: 76px;
+    height: 76px;
+}
+.way_content_text {
+    font-family: "Noto Sans";
+    font-size: 1.625rem;
+    margin: auto 0;
+}
+#right_subject .way_content_text img{
+    margin: 0 10px 0 10px;
+}
+#right_subject .way_content_text p{
+    margin: 0  0 0 20px;
+}
+
+
+/* .way_content {
     display: flex;
 }
 
@@ -545,10 +602,12 @@ p.title_text span{
     display: flex;
     margin : 30px 0;
 }
-.way_content_right >div>div {
+.way_content_text img{
+    margin: 0 10px 0 5px;
+}
+.way_content_right >div > .way_content_text {
     margin: 10px 0 0 50px;
 }
-
 
 .way_content>div >div> img {
     width: 76px;
@@ -564,7 +623,7 @@ p.title_text span{
 .way_content_text >img:nth-of-type(1){
     width: 27px;
     height: 23px;
-}
+} */
 /*********************footer********************/
 footer{
     height: 455px;
