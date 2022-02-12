@@ -176,8 +176,99 @@
                     </div>
                 </div>
             </article>
+            <!--====================================way to come=======================================-->
+            <article>
+                <p class="title_text sub_title_text"><span>오시는 길</span></p>
+                <hr class="grayhr">
+                <div id="map"></div>
+                <div class="way_content">
+                    <div class="way_content_left">
+                        <div id="left_title">
+                            <h2>주소 및 연락처</h2>
+                        </div>
+                        <div id="left_subject">
+                            <div>
+                                <img src="../images/way_map.png" alt="map icon">
+                                <div class="way_content_text">
+                                    <p>장소 : 전라남도 고흥군 봉래면 나로도항길 94-10</p>
+                                    <p>지번 : 전라남도 고흥군 봉래면 신금리 1251</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../images/way_tel.png" alt="tel icon">
+                                <div class="way_content_text">
+                                    <p>TEL: 061-835-9001</p>
+                                    <p>PHONE: 010-5432-9870</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../images/way_web.png" alt="web icon">
+                                <div class="way_content_text">
+                                    <p>www.narobeachhotel.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="way_content_right">
+                        <div id="right_title">
+                            <h2>찾아오시는 법</h2>
+                        </div>
+                        <div id="right_subject">
+                            <div>
+                                <img src="../images/way_bus.png" alt="bus icon">
+                                <div class="way_content_text">
+                                    <p><img src="../images/way_shape.png" alt="역삼각형">서울<img
+                                            src="../images/way_arrow.png" alt="화살표">고흥<span>4시간 30분</span></p>
+                                    <p><img src="../images/way_shape.png" alt="역삼각형">부산<img
+                                            src="../images/way_arrow.png" alt="화살표">고흥<span>2시간 40분</span></p>
+                                    <p><img src="../images/way_shape.png" alt="역삼각형">광주<img
+                                            src="../images/way_arrow.png" alt="화살표">고흥<span>1시간 30분</span></p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../images/way_ship.png" alt="ship icon">
+                                <div class="way_content_text">
+                                    <p><img src="../images/way_shape.png" alt="역삼각형">제주<img
+                                            src="../images/way_arrow.png" alt="화살표">고흥<span>3시간 30분</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=83235e08448765764135934bac59f6cc"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(34.4660242, 127.4551024), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+
+        var imageSrc = 'http://stayover01.dothome.co.kr/Keep-going/images/way_map.png', // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(76, 76), // 마커이미지의 크기입니다
+            imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(34.4660242, 127.4551024); // 마커가 표시될 위치입니다
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage // 마커이미지 설정 
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+    </script>
 </body>
 
 </html>
