@@ -1,5 +1,5 @@
 body{
-    font: normal 16px/1.5 "Noto Sans KR","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
+    font: normal 16px/1.5 "Noto Sans","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
     background: #f1f1f1;
 }
@@ -629,6 +629,7 @@ footer{
     height: 455px;
     width: 100%;
     background: #2A286E;
+    font-family: "Noto Sans";
 }
 #footer_top{
     display: flex;
