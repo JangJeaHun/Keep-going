@@ -312,6 +312,10 @@ font-size: 2.25rem;
     position: absolute;
     z-index: -1;
 }
+.sub_header_main{
+    width: 100%;
+    padding: 20px 0;
+}
 #sub_header .slogan_text{
     position: absolute;
     left: 50%;
@@ -624,6 +628,11 @@ p.title_text span{
     width: 27px;
     height: 23px;
 } */
+/*********************room_banner***************/
+#room_banner img{
+    background: gold;
+    height: 1070px;
+}
 /*********************footer********************/
 footer{
     height: 455px;
