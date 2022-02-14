@@ -422,7 +422,21 @@ font-size: 2.25rem;
     position:absolute;
     right: 0;
     z-index: 100;
-    top: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#move_menu::before{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    background-color:rgba(110,186,213,50%);
+    border-radius: 50%;
+    display: block;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 #move_menu li {
     
@@ -430,18 +444,19 @@ font-size: 2.25rem;
     background: #2A286E;
     border-radius: 50px;
     color: white;
-    width: 230px;
-    height: 60px;
-    font-size: 1.5rem;
+    width: 120px;
+    height: 30px;
+    font-size: 1rem;
     margin: 15px 0;
     text-align: center;
 }
 #move_menu li a {
     display: block;
+    margin: 0;
 }
 #move_menu li a:hover, #move_menu li a:visited {
     font-weight: bold;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
 }
 
 /***********subpage header********/
@@ -702,6 +717,7 @@ p.title_text span{
     font-weight: bold;
     margin: 0 0 50px 0;
 }
+
 #left_subject>div {
     display: flex;
     margin: 0 0 50px 0;
