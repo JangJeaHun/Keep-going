@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sanchez&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/13901f0102.js" crossorigin="anonymous"></script>
+    <!--캐러셀 추가 해보기-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +58,10 @@
     </header>
     <!--=================================carousel========================================-->
     <div id="room_carousel">
-        <img src="../images/room_carousel1.png" alt="">
+        <div><img src="../images/room_carousel1.png" alt=""></div>
+        <div><img src="../images/room_carousel2.png" alt=""></div>
+        <div><img src="../images/room_carousel3.png" alt=""></div>
+        <div><img src="../images/room_carousel4.png" alt=""></div>
     </div>
     <!--=================================section========================================-->
     <section>
@@ -153,7 +159,7 @@
 
             <!--트윈방-->
             <article class="article_room" id="twin">
-                <h2>TWIN  ROOM</h2>
+                <h2>TWIN ROOM</h2>
                 <div id="room_content">
                     <div class="room_content_left">
                         <img src="../images/room_ondol1.png" alt="" class="bigroom">
@@ -273,17 +279,37 @@
 
     </footer>
     <script>
-        $(function(){
-            $(".small li").click(function(e){
+        $(function () {
+            $(".small li").click(function (e) {
                 e.preventDefault();
                 var imgURL = $(this).find("img").attr("src");
-                
+
                 var newTarget = $(this).parents("article").attr("id");
                 console.log(newTarget)
-                $("#"+newTarget).find(".bigroom").attr("src", imgURL)
+                $("#" + newTarget).find(".bigroom").attr("src", imgURL)
             })
         })
     </script>
+    <!--캐러셀 슬라이더-->
+
+    <script type="text/javascript">
+        $('#room_carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            
+            pauseOnFocus: false,
+            pauseOnHover: false
+        });
+
+
+    </script>
+
 </body>
 
 </html>

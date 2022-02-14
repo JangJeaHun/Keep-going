@@ -413,6 +413,37 @@ font-size: 2.25rem;
 }
 
 /**************************END main section*********************************/
+
+/*호텔소개 따라다니는 메뉴*/
+#move_body {
+    position: relative;
+}
+#move_menu {
+    position:absolute;
+    right: 0;
+    z-index: 100;
+    top: 30%;
+}
+#move_menu li {
+    
+    font-family: "Noto Sans";
+    background: #2A286E;
+    border-radius: 50px;
+    color: white;
+    width: 230px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+}
+#move_menu li a {
+    display: block;
+}
+#move_menu li a:hover, #move_menu li a:visited {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
 /***********subpage header********/
 #sub_header {
     position: relative;
@@ -754,6 +785,56 @@ p.title_text span{
     height: 23px;
 } */
 /*********************room_banner***************/
+
+/* .slick-track img{
+    position:relative;
+}
+#room_carousel ul {
+    position: absolute;
+    z-index: 10;
+} */
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li {
+    margin: 0 10px;
+}
+#slick-slide-control00 {
+    font-size: 0;
+    background: purple;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+}
+#slick-slide-control01 {
+    font-size: 0;
+    background: purple;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+}
+#slick-slide-control02 {
+    font-size: 0;
+    background: purple;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+}
+#slick-slide-control03 {
+    font-size: 0;
+    background: purple;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+}
+
+/*---------------------*/
 #room_carousel img{
     width: 100vw;
     margin: 0 auto;

@@ -53,9 +53,15 @@
         </div>
     </header>
     <!--section-->
-    <section>
+    <ul id="move_menu">
+        <li><a href="#move_ceo">ceo인사말</a></li>
+        <li><a href="#move_history">연혁</a></li>
+        <li><a href="#move_cibi">CI/BI 소개</a></li>
+        <li><a href="#move_map">오시는 길</a></li>
+    </ul>
+    <section id="move_body">
         <div class="section_wrap">
-            <article>
+            <article id="move_ceo">
                 <p class="title_text">CEO <span>인사말</span></p>
                 <hr class="grayhr">
                 <div class="ceo_content">
@@ -93,7 +99,7 @@
                 </div>
             </article>
             <!--==========================history====================================-->
-            <article>
+            <article id="move_history">
                 <p class="title_text sub_title_text"><span>연혁</span></p>
                 <hr class="grayhr">
                 <div class="history_content">
@@ -149,7 +155,7 @@
                 </div>
             </article>
             <!--====================================ci/bi=======================================-->
-            <article>
+            <article id="move_cibi">
                 <p class="title_text sub_title_text">CI / BI <span>소개</span></p>
                 <hr class="grayhr">
                 <div class="cibi_content">
@@ -177,7 +183,7 @@
                 </div>
             </article>
             <!--====================================way to come=======================================-->
-            <article>
+            <article id="move_map">
                 <p class="title_text sub_title_text"><span>오시는 길</span></p>
                 <hr class="grayhr">
                 <div id="map"></div>
@@ -238,7 +244,7 @@
             </article>
         </div>
     </section>
-    
+
     <footer class="section">
         <div class="wrap">
             <div>
@@ -267,8 +273,21 @@
 
     </footer>
     <!--=====================================footer=================================================-->
+    <!--=====================================move_menu=================================================-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentPosition = parseInt($("#move_menu").css("top"));
+            $(window).scroll(function () {
+                var position = $(window).scrollTop();
+                $("#move_menu").stop().animate({ "top": position + currentPosition + "px" }, 1000);
+            });
+        });
+
+    </script>
+
+
     <!--=======================================map-script=======================================================-->
-    
+
     <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=83235e08448765764135934bac59f6cc"></script>
     <script>
