@@ -339,7 +339,8 @@ hr.divider{
     background-color: #2A286E;
 }
 .room_bottom_left img{
-    height: 600px
+    height: 600px;
+    width: 600px;
 }
 .room_bottom_right{
     width: 100%;
@@ -354,6 +355,7 @@ hr.divider{
     font-size: 16px;
     margin: 0 auto;
 }
+
 /******** main-travel ******/
 .travel{
     display: flex;
