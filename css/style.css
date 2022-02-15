@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font: normal 16px/1.5 "Noto Sans","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
@@ -984,20 +987,20 @@ p.title_text span{
     font-size: 2rem;
     padding: 20px;
 }
-#img_travel_1{
-    background: url(../images/img-travel_1_bg.png)  no-repeat center/cover;
-}
 .img_travel_1 > h3{
     margin: 40px auto;
     text-align: center;
     background: white;
-
+}
+#img_travel_1{
+    background: url(../images/img-travel_1_bg.png)  no-repeat center/cover;
 }
 #img_travel_2{
     background: url(../images/img-travel_2_bg.png)  no-repeat center/cover;
 }
 #img_travel_3{
     background: url(../images/img-travel_3_bg.png)  no-repeat center/cover;
+    
 }
 #img_travel_4{
     background: url(../images/img-travel_4_bg.png)  no-repeat center/cover;
