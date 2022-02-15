@@ -5,3 +5,4 @@ Version: 1.0.0
 Detail: 고흥 나로비치호텔 클론코딩
 Date : 22.02.03 제작시작
     02.08~02.10      main index.html Finish
+    02.08~02.15      travel index.html Finish
