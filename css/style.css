@@ -450,7 +450,7 @@ font-size: 2.25rem;
     color: white;
 
     width: 150px;
-    height: 30px;
+    height: 40px;
 
     font-size: 1rem;
     margin: 20px 0;
@@ -458,7 +458,7 @@ font-size: 2.25rem;
 }
 /* #move_menu li:nth-child(1), #move_menu li:nth-child(4){
     margin: 0 15px 0 30px;
-} */
+} */ /*스케치에선 이게 맞는데 선생님이 없는 게 낫다하심*/
 
 #move_menu li:hover {
     transition: all .3s;
@@ -1021,19 +1021,25 @@ p.title_text span{
 .fee_index .right_none{
     border-right: none;
 }
-/**reserv**/
+/*******reserv*******/
 .visit_reserv {
     display: flex;
     width: 90%;
+    height:190px;
     border: 1px solid rgb(126, 126, 126);
+    margin: 30px;
 }
 .call_reserv {
     display: flex;
     width: 90%;
+    height: 230px;
     border: 1px solid rgb(126, 126, 126);
+    margin: 30px;
+
 }
 .reserv_left{
     width: calc(100% / 3);
+    border-right: 1px solid rgb(126, 126, 126);
 }
 .reserv_left p {
     font-size: 3rem;
@@ -1049,10 +1055,49 @@ p.title_text span{
     width: calc(100% - (100% / 3));
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 .reserv_right p {
     font-size: 1.125rem;
 }
+.reserv_right ul{
+    margin: 20px;
+    font-family: "Noto Sans";
+    font-size: 1.125rem;
+}
+.reserv_right ul li {
+    margin: 15px;
+}
+.reserv_right ul span {
+    font-weight: bold;
+}
+.reserv_right ul mark {
+    background: none;
+    color: red;
+}
+#visit {
+    background: #89A7A7;
+    border: none;
+    align-items: center;
+}
+/* #visit a:hover{
+    background: 
+} */
+#call {
+    background: #83B8CB;
+    border: none;
+}
+.reserv_right button{
+    width: 200px;
+    height: 60px;
+}
+.reserv_right button a {
+    display: block;
+    color: white;
+    text-align: center;
+    
+}
+
 
 
 /**************Travel**************************/
