@@ -993,7 +993,9 @@ p.title_text span{
     height: 47px;
     background: #2A286E;
 }
-
+#price tr:nth-child(1) td:nth-last-child(1){
+    vertical-align: middle;
+}
 .fee_index table {
     width: 95%;
     margin: 20px auto;
@@ -1012,6 +1014,38 @@ p.title_text span{
 }
 .fee_index .right_none{
     border-right: none;
+}
+/**reserv**/
+.visit_reserv {
+    display: flex;
+    width: 90%;
+    border: 1px solid rgb(126, 126, 126);
+}
+.call_reserv {
+    display: flex;
+    width: 90%;
+    border: 1px solid rgb(126, 126, 126);
+}
+.reserv_left{
+    width: calc(100% / 3);
+}
+.reserv_left p {
+    font-size: 3rem;
+    padding: 20px;
+}
+.reserv_left span{
+    color: #2A286E;
+    font-size: 2.25rem;
+}
+
+
+.reserv_right {
+    width: calc(100% - (100% / 3));
+    display: flex;
+    justify-content: space-between;
+}
+.reserv_right p {
+    font-size: 1.125rem;
 }
 
 
@@ -1076,6 +1110,7 @@ p.title_text span{
 #img_travel_9{
     background: url(../images/img-travel_9_bg.png)  no-repeat center/cover;
 }
+
 
 
 /*********************footer********************/
