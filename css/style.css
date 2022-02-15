@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font: normal 16px/1.5 "Noto Sans","Sanchez","Noto Sans","Nanum Gothic","Roboto Slab", sans-serif;
     color: black;
@@ -236,7 +239,7 @@ font-size: 2.25rem;
 #sub_header .slogan_text :nth-child(1){
     font-size: 2rem;
     }
-/**************************main section*********************************/
+/*************main_section************/
 /********main notice*****/
 
 .section_hr{
@@ -445,8 +448,10 @@ font-size: 2.25rem;
     background: #2A286E;
     border-radius: 50px;
     color: white;
-    width: 130px;
-    height: 40px;
+
+    width: 150px;
+    height: 30px;
+
     font-size: 1rem;
     margin: 20px 0;
     text-align: center;
@@ -968,6 +973,7 @@ p.title_text span{
     font-size: 1.5rem;
     letter-spacing: -2px;
 }
+
 /*********************fee_index.html***************/
 .fee_index p {
     font-family: "Noto Sans";
@@ -1013,6 +1019,66 @@ p.title_text span{
 .fee_index .right_none{
     border-right: none;
 }
+
+
+/**************Travel**************************/
+.travel_h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 100px;
+}
+
+.travel_wrap{
+    display: flex;
+    align-items: center;
+    width: 1366px;
+    margin: 200px auto;
+}
+.travel_wrap div{
+    margin: 0 auto;
+}
+.travel_text{
+    text-align: center;
+    padding: 100px;
+}
+.travel_text h3{
+    font-size: 2rem;
+    padding: 20px;
+}
+.img_travel_1 > h3{
+    margin: 40px auto;
+    text-align: center;
+    background: white;
+}
+#img_travel_1{
+    background: url(../images/img-travel_1_bg.png)  no-repeat center/cover;
+}
+#img_travel_2{
+    background: url(../images/img-travel_2_bg.png)  no-repeat center/cover;
+}
+#img_travel_3{
+    background: url(../images/img-travel_3_bg.png)  no-repeat center/cover;
+    
+}
+#img_travel_4{
+    background: url(../images/img-travel_4_bg.png)  no-repeat center/cover;
+}
+#img_travel_5{
+    background: url(../images/img-travel_5_bg.png)  no-repeat center/cover;
+}
+#img_travel_6{
+    background: url(../images/img-travel_6_bg.png)  no-repeat center/cover;
+}
+#img_travel_7{
+    background: url(../images/img-travel_7_bg.png)  no-repeat center/cover;
+}
+#img_travel_8{
+    background: url(../images/img-travel_8_bg.png)  no-repeat center/cover;
+}
+#img_travel_9{
+    background: url(../images/img-travel_9_bg.png)  no-repeat center/cover;
+}
+
 
 /*********************footer********************/
 footer{
