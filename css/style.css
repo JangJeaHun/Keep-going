@@ -1067,10 +1067,10 @@ p.title_text span{
     margin: 0 auto;
 }
 .travel_text{
-    text-align: center;
     padding: 100px;
 }
 .travel_text h3{
+    text-align: center;
     font-size: 2rem;
     padding: 20px;
 }
@@ -1081,7 +1081,10 @@ p.title_text span{
 .img_travel_1 > h3{
     margin: 40px auto;
     text-align: center;
-    background: whitegg
+    background: white
+}
+.travel_text div h3{
+    text-align: center;
 }
 #img_travel_1{
     background: url(../images/img-travel_1_bg.png)  no-repeat center/cover;
