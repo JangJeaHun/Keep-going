@@ -10,61 +10,167 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     
     <title>주변관광지</title>
 </head>
 <body>
-    <header id="sub_header">
-        <div class="sub_header_main">
-            <div class="header_main_wrap">
-                <div class="header_main_logo">
-                    <a href="../index.html">
-                        <img src="../images/img_logo.png" alt="나로비치호텔">
-                    </a>
-                </div>
-                <div class="header_main_menu">
-                    <nav>
-                        <ul id="gnb">
-                            <li><a href="../introduce/index.html">호텔소개</a></li>
-                            <li><a href="../room/index.html">시설안내</a></li>
-                            <li><a href="../fee/index.html">예약안내</a></li>
-                            <li><a href="#">주변관광지</a></li>
-                            <li><a href="#">고객센터</a></li>
-                        </ul>
-                    </nav>
-                    <div id="burger">
-                        <span class="bar w70"></span>
-                        <span class="bar"></span>
-                        <span class="bar w70"></span>
+        <header id="sub_header">
+            <div class="sub_header_main">
+                <div class="header_main_wrap">
+                    <div class="header_main_logo">
+                        <a href="../index.html">
+                            <img src="../images/img_logo.png" alt="나로비치호텔">
+                        </a>
+                    </div>
+                    <div class="header_main_menu">
+                        <nav>
+                            <ul id="gnb">
+                                <li><a href="../introduce/index.html">호텔소개</a></li>
+                                <li><a href="../room/index.html">시설안내</a></li>
+                                <li><a href="../fee/index.html">예약안내</a></li>
+                                <li><a href="index.html">주변관광지</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </nav>
+                        <div id="burger">
+                            <span class="bar w70"></span>
+                            <span class="bar"></span>
+                            <span class="bar w70"></span>
+                        </div>
                     </div>
                 </div>
+                <hr class="divider">
             </div>
-            <hr class="divider">
-        </div>
+            <div class="header_slogan">
+                <div class="slogan_text">
+                    <p>Select a beach image to download.</p>
+                    <p>아름다움과 아늑함이 공존하는 곳.</p>
+                </div>
+            </div>
+        </header>
 
-        <div class="header_slogan">
-            <div class="slogan_text">
-                <p>Select a beach image to download.</p>
-                <p>아름다움과 아늑함이 공존하는 곳.</p>
-            </div>
-        </div>
-    </header>
+        <ul id="move_menu">
+            <li><a href="#img_travel_1">나로우주센터</a></li>
+            <li><a href="#img_travel_2">청소년우주체험센터</a></li>
+            <li><a href="#img_travel_3">천문과학관</a></li>
+            <li><a href="#img_travel_4">거문도/백도</a></li>
+            <li><a href="#img_travel_5">소록도</a></li>
+            <li><a href="#img_travel_6">나로도해수욕장</a></li>
+            <li><a href="#img_travel_7">염포해수욕장</a></li>
+            <li><a href="#img_travel_8">나로도항</a></li>
+            <li><a href="#img_travel_9">봉래산</a></li>
+        </ul>
     <!--=================================section========================================-->
-    <section id="fullpage_1">
-        <h3>주변관광지</h3>
-        <article class="section" class="img_travel_1">
-            <div><img src="../images/img-travel_1.png" alt="관광지사진1번">
-            </div>     
-            <div>
-                <h3>나로우주센터</h3>
-                <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
-            </div> 
-        </article>
     
-    </section>
+        <section>
+            <h3 class="travel_h3">주변관광지</h3>
+            <hr class="travel_hr">
+            <article id="img_travel_1">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_1.png" alt="관광지사진1번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>나로우주센터</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_2">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_2.png" alt="관광지사진2번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>청소년우주체험센터</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="img_travel_3">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_3.png" alt="관광지사진3번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>천문과학관</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_4">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_4.png" alt="관광지사진4번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>거문도/백도</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_5">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_5.png" alt="관광지사진6번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>소록도</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_6">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_6.png" alt="관광지사진6번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>나로도해수욕장</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_7">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_7.png" alt="관광지사진7번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>염포해수욕장</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_8">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_8.png" alt="관광지사진8번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>나로도항</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="img_travel_9">
+                <div class="travel_wrap">
+                    <div><img src="../images/img-travel_9.png" alt="관광지사진9번">
+                    </div>
+                    <div class="travel_text">
+                        <h3>봉래산</h3>
+                        <span>나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명나로우주센터 설명</span>
+                    </div>
+                </div>
+            </article>
     
+    
+     </section>
     <!--=================================footer=========================================-->
     <footer class="section">
         <div class="wrap">
@@ -93,5 +199,17 @@
         </div>
 
     </footer>
+
+    <!-- move_menu -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentPosition = parseInt($("#move_menu").css("top"));
+            $(window).scroll(function () {
+                var position = $(window).scrollTop();
+                $("#move_menu").stop().animate({ "top": position + currentPosition + "px" }, 1000);
+            });
+        });
+
+    </script>
 </body>
 </html>
