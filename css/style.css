@@ -318,6 +318,10 @@ hr.divider{
     width: 738px;
     margin: 10px 0;
 }
+#deluxe_ondol{
+    font-weight: 900;
+    color: #2A286E;
+}
 .room_menu ul{
     display: flex;
     
@@ -341,21 +345,31 @@ hr.divider{
 .room_bottom_left img{
     height: 600px;
     width: 600px;
+    
 }
 .room_bottom_right{
     width: 100%;
     text-align: center;
     align-self: center;
 }
+.span_wrap{
+    padding: 0 150px;
+}
 .room_bottom_right h3{
     font-size: 24px;
+    margin-top: 10px;
 }
 .room_bottom_right p{
     font: normal "Noto Sans";
     font-size: 16px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
-
+.room_bottom_right button{
+    height: 50px;
+    width: 200px;
+    background: #2A286E;
+    color: white;
+}
 /******** main-travel ******/
 .travel{
     display: flex;
@@ -446,7 +460,7 @@ hr.divider{
     color: white;
 
     width: 150px;
-    height: 40px;
+    height: 30px;
 
     font-size: 1rem;
     margin: 20px 0;
@@ -454,7 +468,7 @@ hr.divider{
 }
 /* #move_menu li:nth-child(1), #move_menu li:nth-child(4){
     margin: 0 15px 0 30px;
-} */ /*스케치에선 이게 맞는데 선생님이 없는 게 낫다하심*/
+} */
 
 #move_menu li:hover {
     transition: all .3s;
@@ -995,9 +1009,7 @@ p.title_text span{
     height: 47px;
     background: #2A286E;
 }
-#price tr:nth-child(1) td:nth-last-child(1){
-    vertical-align: middle;
-}
+
 .fee_index table {
     width: 95%;
     margin: 20px auto;
@@ -1017,83 +1029,6 @@ p.title_text span{
 .fee_index .right_none{
     border-right: none;
 }
-/*******reserv*******/
-.visit_reserv {
-    display: flex;
-    width: 90%;
-    height:190px;
-    border: 1px solid rgb(126, 126, 126);
-    margin: 30px;
-}
-.call_reserv {
-    display: flex;
-    width: 90%;
-    height: 230px;
-    border: 1px solid rgb(126, 126, 126);
-    margin: 30px;
-
-}
-.reserv_left{
-    width: calc(100% / 3);
-    border-right: 1px solid rgb(126, 126, 126);
-}
-.reserv_left p {
-    font-size: 3rem;
-    padding: 20px;
-}
-.reserv_left span{
-    color: #2A286E;
-    font-size: 2.25rem;
-}
-
-
-.reserv_right {
-    width: calc(100% - (100% / 3));
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-.reserv_right p {
-    font-size: 1.125rem;
-}
-.reserv_right ul{
-    margin: 20px;
-    font-family: "Noto Sans";
-    font-size: 1.125rem;
-}
-.reserv_right ul li {
-    margin: 15px;
-}
-.reserv_right ul span {
-    font-weight: bold;
-}
-.reserv_right ul mark {
-    background: none;
-    color: red;
-}
-#visit {
-    background: #89A7A7;
-    border: none;
-    align-items: center;
-}
-/* #visit a:hover{
-    background: 
-} */
-#call {
-    background: #83B8CB;
-    border: none;
-}
-.reserv_right button{
-    width: 200px;
-    height: 60px;
-}
-.reserv_right button a {
-    display: block;
-    color: white;
-    text-align: center;
-    
-}
-
 
 
 /**************Travel**************************/
@@ -1114,10 +1049,10 @@ p.title_text span{
     margin: 0 auto;
 }
 .travel_text{
+    text-align: center;
     padding: 100px;
 }
 .travel_text h3{
-    text-align: center;
     font-size: 2rem;
     padding: 20px;
 }
@@ -1128,10 +1063,7 @@ p.title_text span{
 .img_travel_1 > h3{
     margin: 40px auto;
     text-align: center;
-    background: white
-}
-.travel_text div h3{
-    text-align: center;
+    background: whitegg
 }
 #img_travel_1{
     background: url(../images/img-travel_1_bg.png)  no-repeat center/cover;
@@ -1160,7 +1092,6 @@ p.title_text span{
 #img_travel_9{
     background: url(../images/img-travel_9_bg.png)  no-repeat center/cover;
 }
-
 
 
 /*********************footer********************/
