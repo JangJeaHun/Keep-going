@@ -12,9 +12,12 @@ $(document).ready(function(){
     
   }); 
   $.fn.fullpage.setAllowScrolling(ture);
+
 });
+
 $(function(){
   tab();
+
 });
 
 function tab(){
@@ -43,10 +46,7 @@ function tab(){
       });
 
 
-      $(this).addClass("active");
-      $("#double").removeClass("active");
-      $("#twin").removeClass("active");
-      $("#suite").removeClass("active");
+      $(this).addClass("active").sibling("div").removeClass("active");
   })
   $("#double").click(function(){
     $(".room_1").css("display","none");
@@ -139,3 +139,5 @@ function tab(){
       $("#twin").removeClass("active");
   })
 }
+
+
